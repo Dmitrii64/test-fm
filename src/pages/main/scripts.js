@@ -7,7 +7,6 @@ const swiper = new Swiper('.swiper', {
     },
     pagination: {
         el: ".swiper-pagination",
-        // type: "fraction",
         type: 'custom',
         renderCustom: function (swiper, current, total) {
             return current + '<span class="swiper-separator"></span>' + total; 
