@@ -1,0 +1,119 @@
+// Подключение компонентов
+@import "./header/header";
+@import "./footer/footer";
+
+$font-default: "Inter", "Helvetica", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: $font-default;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.swiper-wrapper {
+  height: fit-content;
+}
+
+.swiper-nav {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin-top: 21px;
+  margin-left: 312px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  position: relative;
+  width: 46px;
+  height: 46px;
+  margin: 0 15px 0 0;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 15px;
+    transform: translate(-50%,-50%);
+    background-image: url("/static/images/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.swiper-button-next::after {
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  min-width: 140px;
+  margin-left: 50px;
+  position: relative;
+  color: #FFFFFF;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-family: 'Akrobat';
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(43/42);
+}
+
+.swiper-separator {
+  display: block;
+  margin: 0 25px;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}

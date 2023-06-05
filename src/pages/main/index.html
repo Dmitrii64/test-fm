@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/fonts.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Главная</title>
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main">
+      <div class="poster">
+        <div class="poster__tours">
+          <div class="tour">
+            <p class="tour__days">7 дней</p>
+            <h1 class="tour__title">ТАЙНЫ МУЛЬТИНСКИХ ОЗЕР</h1>
+            <p class="tour__text">Отдых с прогулками вдоль высокогорных заповедных озер, а также на водопад Куйгук. Прогулка на смотровую, с которой вы увидите Уймонскую долину. </p>
+            <button class="tour__description">Описание тура</button>
+            <div class="tour__buttons">
+              <a class="tour__booking" href="#">Забронировать место</a>
+              <button class="tour__favorite"></button>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-1.jpg" alt="tour-1">
+                <button class="card__favorite card__favorite_active"></button>
+                <div class="card__info">
+                  <p class="card__days">3 дней</p>
+                  <h2 class="card__title">Горные приключения</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-2.jpg" alt="tour-2">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">5 дней</p>
+                  <h2 class="card__title">Знакомство с алтаем</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-3.jpg" alt="tour-3">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">6 дней</p>
+                  <h2 class="card__title">авторский треккинг тур</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-1.jpg" alt="tour-1">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">3 дней</p>
+                  <h2 class="card__title">Горные приключения</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-2.jpg" alt="tour-2">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">5 дней</p>
+                  <h2 class="card__title">Знакомство с алтаем</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-3.jpg" alt="tour-3">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">6 дней</p>
+                  <h2 class="card__title">авторский треккинг тур</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-1.jpg" alt="tour-1">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">3 дней</p>
+                  <h2 class="card__title">Горные приключения</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-2.jpg" alt="tour-2">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">5 дней</p>
+                  <h2 class="card__title">Знакомство с алтаем</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-3.jpg" alt="tour-3">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">6 дней</p>
+                  <h2 class="card__title">авторский треккинг тур</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-1.jpg" alt="tour-1">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">3 дней</p>
+                  <h2 class="card__title">Горные приключения</h2>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <img class="card__img" src="/static/images/tour-2.jpg" alt="tour-2">
+                <button class="card__favorite"></button>
+                <div class="card__info">
+                  <p class="card__days">5 дней</p>
+                  <h2 class="card__title">Знакомство с алтаем</h2>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-nav">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+              <img class="poster__gif" src="/static/images/girl.gif" alt="girl" width="144" height="241">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- @@include('footer/index.html') -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
